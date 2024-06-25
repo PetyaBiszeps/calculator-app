@@ -1,0 +1,204 @@
+@import "css/default.css";
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr-background-blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+header {
+    width: 540px;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    color: var(--clr-text-white);
+}
+
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.theme-toggle-name {
+
+}
+
+.theme-toggle-name p {
+    margin: 0;
+    font-family: "League Spartan", sans-serif;
+    font-size: 12px;
+}
+
+.toggle-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    background-color: var(--clr-buttons-background-blue);
+    padding: 5px 5px;
+    border-radius: 50px;
+}
+
+.toggle-input input {
+    margin: 0;
+    padding: 0;
+
+    width: 14px;
+    height: 14px;
+
+    appearance: none;
+    opacity: 0;
+
+    background-color: var(--clr-button-background-red);
+    border-radius: 50%;
+}
+
+.toggle-input input:hover {
+    background-color: var(--clr-button-background-active-red);
+    cursor: pointer;
+}
+
+#one {
+    opacity: 1;
+}
+
+main {
+    width: 540px;
+    height: 632px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result-background {
+    width: 100%;
+    height: 20%;
+
+    background-color: var(--clr-result-background-blue);
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 32px 40px;
+}
+
+#display {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--clr-result-background-blue);
+    border: none;
+
+    font-family: "League Spartan", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--clr-text-white);
+
+    text-align: right;
+    text-overflow: ellipsis;
+}
+
+.buttons-background {
+    background-color: var(--clr-buttons-background-blue);
+    border-radius: 12px;
+
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.buttons-container button {
+    width: 100px;
+    height: 60px;
+
+    font-family: "League Spartan", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--clr-text-gray-blue);
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    background-color: var(--clr-button-background-gray-orange);
+    box-shadow: 0 4px 0 var(--clr-button-background-shadow-gray-orange);
+    border: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.buttons-container button:hover {
+    background-color: var(--clr-text-white);
+}
+
+.buttons-container button:nth-child(4) {
+    font-size: 28px;
+    color: var(--clr-text-white);
+    background-color: var(--clr-button-background-blue);
+    box-shadow: 0 4px 0 var(--clr-button-background-shadow-blue);
+}
+
+.buttons-container button:nth-child(4):hover {
+    background-color: var(--clr-button-background-active-blue);
+}
+
+.buttons-container button:nth-child(17) {
+    font-size: 28px;
+    flex-grow: 1;
+    color: var(--clr-text-white);
+    background-color: var(--clr-button-background-blue);
+    box-shadow: 0 4px 0 var(--clr-button-background-shadow-blue);
+}
+
+.buttons-container button:nth-child(17):hover {
+    background-color: var(--clr-button-background-active-blue);
+}
+
+.buttons-container button:nth-child(18) {
+    flex-grow: 1;
+    color: var(--clr-text-white);
+    background-color: var(--clr-button-background-red);
+    box-shadow: 0 4px 0 var(--clr-button-background-shadow-red);
+}
+
+.buttons-container button:nth-child(18):hover {
+    background-color: var(--clr-button-background-active-red);
+}

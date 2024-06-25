@@ -1,0 +1,74 @@
+:root {
+    font-family: "League Spartan", sans-serif;
+    font-size: 32px; /* --- numbers --- */
+    font-weight: 700;
+
+    /* --- theme #1 --- */
+    /* --- backgrounds --- */
+    --clr-background-blue: hsl(222, 26%, 31%);
+    --clr-buttons-background-blue: hsl(223, 31%, 20%);
+    --clr-result-background-blue: hsl(224, 36%, 15%);
+
+    /* --- keys --- */
+    --clr-button-background-gray-orange: hsl(30, 25%, 89%);
+    --clr-button-background-shadow-gray-orange: hsl(28, 16%, 65%);
+
+    --clr-button-background-blue: hsl(225, 21%, 49%);
+    --clr-button-background-shadow-blue: hsl(224, 28%, 35%);
+    --clr-button-background-active-blue: hsl(224, 51%, 76%);
+
+    --clr-button-background-red: hsl(6, 63%, 50%);
+    --clr-button-background-shadow-red: hsl(6, 70%, 34%);
+    --clr-button-background-active-red: hsl(6, 93%, 67%);
+
+    /* --- text --- */
+    --clr-text-gray-blue: hsl(221, 14%, 31%);
+    --clr-text-white: hsl(0, 0%, 100%);
+
+
+    /* --- theme #2 --- */
+    /* --- backgrounds --- */
+    --clr-background-gray: hsl(0, 0%, 90%);
+    --clr-buttons-background-gray: hsl(0, 5%, 81%);
+    --clr-result-background-gray: hsl(0, 0%, 93%);
+
+    /* --- keys --- */
+    --clr-button-background-gray-yellow: hsl(45, 7%, 89%);
+    --clr-button-background-shadow-gray-yellow: hsl(35, 11%, 61%);
+
+    --clr-button-background-cyan: hsl(185, 42%, 37%);
+    --clr-button-background-shadow-cyan: hsl(185, 58%, 25%);
+    --clr-button-background-active-cyan: hsl(185, 41%, 56%);
+
+    --clr-button-background-orange: hsl(25, 98%, 40%);
+    --clr-button-background-shadow-orange: hsl(25, 99%, 27%);
+    --clr-button-background-active-orange: hsl(25, 100%, 61%);
+
+    /* --- text --- */
+    --clr-text-dark-yellow: hsl(60, 10%, 19%);
+    --clr-text-white2: hsl(0, 0%, 100%);
+
+
+    /* --- theme #3 --- */
+    /* --- backgrounds --- */
+    --clr-background-violet: hsl(268, 75%, 9%);
+    --clr-buttons-background-violet: hsl(268, 71%, 12%);
+
+    /* --- keys --- */
+    --clr-button-background-dark-violet: hsl(268, 47%, 21%);
+    --clr-button-background-shadow-magenta: hsl(290, 70%, 36%);
+    --clr-button-background-active-dark-violet: hsl(268, 54%, 44%);
+
+    --clr-button-background-violet: hsl(281, 89%, 26%);
+    --clr-button-background-shadow-vivid-magenta: hsl(285, 91%, 52%);
+    --clr-button-background-active-violet: hsl(280, 56%, 44%);
+
+    --clr-button-background-pure-cyan: hsl(176, 100%, 44%);
+    --clr-button-background-soft-cyan: hsl(177, 92%, 70%);
+    --clr-button-background-active-pure-cyan: hsl(177, 100%, 79%);
+
+    /* --- text --- */
+    --clr-text-light-yellow: hsl(52, 100%, 62%);
+    --clr-text-dark-blue: hsl(198, 20%, 13%);
+    --clr-text-white3: hsl(0, 0%, 100%);
+}
