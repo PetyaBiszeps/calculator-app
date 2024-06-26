@@ -2,11 +2,12 @@ function switchTheme() {
     const bodyColor = document.getElementsByTagName('body')[0];
     const p1 = document.getElementsByClassName('p1');
 
+    const inputBackground = document.getElementById('input-background');
+    const switchBtn = document.getElementsByClassName('switchBtn');
+
     const resultBackground = document.getElementById('res-bg');
     const displayBackground = document.getElementById('display');
-
     const buttonsBackground = document.getElementById('buttons-bg');
-    const switchBtn = document.getElementsByClassName('switchBtn');
 
     const buttonSymbols = document.getElementsByClassName('button-symbol');
     const buttonRemove = document.getElementsByClassName('button-remove');
@@ -15,6 +16,7 @@ function switchTheme() {
     const themes = [
         {
             bodyBackgroundColor: 'hsl(222, 26%, 31%)',
+            inputBackgroundColor: 'hsl(223, 31%, 20%)',
             resultBackgroundColor: 'hsl(224, 36%, 15%)',
             displayBackgroundColor: 'hsl(224, 36%, 15%)',
             buttonsBackgroundColor: 'hsl(223, 31%, 20%)',
@@ -43,6 +45,7 @@ function switchTheme() {
         },
         {
             bodyBackgroundColor: 'hsl(0, 0%, 90%)',
+            inputBackgroundColor: 'hsl(0, 5%, 81%)',
             resultBackgroundColor: 'hsl(0, 0%, 93%)',
             displayBackgroundColor: 'hsl(0, 0%, 93%)',
             buttonsBackgroundColor: 'hsl(0, 5%, 81%)',
@@ -71,6 +74,7 @@ function switchTheme() {
         },
         {
             bodyBackgroundColor: 'hsl(268, 75%, 9%)',
+            inputBackgroundColor: 'hsl(268, 71%, 12%)',
             resultBackgroundColor: 'hsl(268, 71%, 12%)',
             displayBackgroundColor: 'hsl(268, 71%, 12%)',
             buttonsBackgroundColor: 'hsl(268, 71%, 12%)',
@@ -101,6 +105,7 @@ function switchTheme() {
 
     const applyTheme = (theme) => {
         bodyColor.style.backgroundColor = theme.bodyBackgroundColor;
+        inputBackground.style.backgroundColor = theme.inputBackgroundColor;
         resultBackground.style.backgroundColor = theme.resultBackgroundColor;
         displayBackground.style.backgroundColor = theme.displayBackgroundColor;
         buttonsBackground.style.backgroundColor = theme.buttonsBackgroundColor;

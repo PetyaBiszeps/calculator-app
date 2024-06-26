@@ -10,6 +10,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
     - [Screenshot #1](#screenshot-1)
     - [Screenshot #2](#screenshot-2)
     - [Screenshot #3](#screenshot-3)
+    - [Screenshot #4](#screenshot-4)
     - [Links](#links)
 - [My process](#my-process)
     - [Built with](#built-with)
@@ -38,6 +39,10 @@ as an actual app with nodeJS ;)
 
 ![](/assets/screenshots/screenshot-3.png)
 
+### Screenshot #4
+
+![](assets/screenshots/screenshot-4.png)
+
 ### Links
 
 - [Solution URL]()
@@ -59,4 +64,4 @@ As I already said, I've used only vanilla instruments:
 ### What I have learnt
 
 Well, basically I've and still learning to work with vanilla web development instruments and to create balance between them. I found some new (for me) JS
-functionality, methods, etc. Also I had practice with loops, arrays. It's always good to have practice ;)
+functionality, methods, etc. Also, I had practice with JS loops, arrays and css grid. It's always good to have some practice ;)
