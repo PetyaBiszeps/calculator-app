@@ -12,49 +12,57 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <p class="p1">calc</p>
-    <div class="theme-toggle-container">
+<div class="app">
+    <header>
+        <h1 class="p1" id="h1-logo">calc</h1>
         <div class="theme-toggle-name">
             <p class="p1">THEME</p>
+        </div>
+        <div class="toggle-input-count">
+            <p class="p1">1</p>
+            <p class="p1">2</p>
+            <p class="p1">3</p>
         </div>
         <div class="toggle-input">
             <input class="switchBtn" id="one" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="0"/>
             <input class="switchBtn" id="two" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="1"/>
             <input class="switchBtn" id="three" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="2"/>
         </div>
-    </div>
-</header>
-<main>
-    <div class="result-background" id="res-bg">
-        <input class="p1" id="display" readonly>
-    </div>
-    <div class="buttons-background" id="buttons-bg">
-        <div class="buttons-container">
-            <button class="button button-symbol" onclick="appendToDisplay('7')">7</button>
-            <button class="button button-symbol" onclick="appendToDisplay('8')">8</button>
-            <button class="button button-symbol" onclick="appendToDisplay('9')">9</button>
-            <button class="button button-remove" onclick="delFromDisplay()">DEL</button>
-            <button class="button button-symbol" onclick="appendToDisplay('4')">4</button>
-            <button class="button button-symbol" onclick="appendToDisplay('5')">5</button>
-            <button class="button button-symbol" onclick="appendToDisplay('6')">6</button>
-            <button class="button button-symbol" onclick="appendToDisplay('+')">+</button>
-            <button class="button button-symbol" onclick="appendToDisplay('1')">1</button>
-            <button class="button button-symbol" onclick="appendToDisplay('2')">2</button>
-            <button class="button button-symbol" onclick="appendToDisplay('3')">3</button>
-            <button class="button button-symbol" onclick="appendToDisplay('-')">-</button>
-            <button class="button button-symbol" onclick="appendToDisplay('.')">.</button>
-            <button class="button button-symbol" onclick="appendToDisplay('0')">0</button>
-            <button class="button button-symbol" onclick="appendToDisplay('/')">/</button>
-            <button class="button button-symbol" onclick="appendToDisplay('*')">x</button>
-            <button class="button button-remove" onclick="clearDisplay()">RESET</button>
-            <button class="button" id="button-calculate" onclick="calculate()">=</button>
+    </header>
+    <main>
+        <div class="result-background" id="res-bg">
+            <input class="p1" id="display" readonly>
         </div>
-    </div>
-</main>
+        <div class="buttons-background" id="buttons-bg">
+            <div class="buttons-container">
+                <button class="button button-symbol" onclick="appendToDisplay('7')">7</button>
+                <button class="button button-symbol" onclick="appendToDisplay('8')">8</button>
+                <button class="button button-symbol" onclick="appendToDisplay('9')">9</button>
+                <button class="button button-remove" onclick="delFromDisplay()">DEL</button>
+                <button class="button button-symbol" onclick="appendToDisplay('4')">4</button>
+                <button class="button button-symbol" onclick="appendToDisplay('5')">5</button>
+                <button class="button button-symbol" onclick="appendToDisplay('6')">6</button>
+                <button class="button button-symbol" onclick="appendToDisplay('+')">+</button>
+                <button class="button button-symbol" onclick="appendToDisplay('1')">1</button>
+                <button class="button button-symbol" onclick="appendToDisplay('2')">2</button>
+                <button class="button button-symbol" onclick="appendToDisplay('3')">3</button>
+                <button class="button button-symbol" onclick="appendToDisplay('-')">-</button>
+                <button class="button button-symbol" onclick="appendToDisplay('.')">.</button>
+                <button class="button button-symbol" onclick="appendToDisplay('0')">0</button>
+                <button class="button button-symbol" onclick="appendToDisplay('/')">/</button>
+                <button class="button button-symbol" onclick="appendToDisplay('*')">x</button>
+                <button class="button button-remove" onclick="clearDisplay()">RESET</button>
+                <button class="button" id="button-calculate" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </main>
+</div>
+
 
 <script src="app.js"></script>
 <script src="js/logic.js"></script>
 <script src="js/themes.js"></script>
+
+
 </body>
 </html>

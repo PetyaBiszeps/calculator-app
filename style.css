@@ -1,6 +1,5 @@
 @import "css/default.css";
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -10,61 +9,95 @@ html, body {
 }
 
 body {
-    background-color: var(--clr-background-blue);
-
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+}
+
+h1 h2 h3 p {
+    font-family: "League Spartan", sans-serif;
+}
+
+.app {
+    width: 540px;
+
+    display: grid;
+    grid-gap: 32px;
 }
 
 header {
-    width: 540px;
-    height: 45px;
+    width: 100%;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    grid-template-columns: 70% 18% 12%;
 }
 
-header p {
-    font-family: "League Spartan", sans-serif;
-    font-size: 28px;
-    color: var(--clr-text-white);
-}
+header #h1-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 
-.theme-toggle-container {
-    display: flex;
-    align-items: center;
-
-    gap: 25px;
-}
-
-.theme-toggle-name {
-
-}
-
-.theme-toggle-name p {
     margin: 0;
-    font-family: "League Spartan", sans-serif;
+    padding: 0;
+
+    font-size: 36px;
+}
+
+header .theme-toggle-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    justify-self: center;
+}
+
+header .theme-toggle-name p {
+    margin: 0;
     font-size: 12px;
 }
 
-.toggle-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+header .toggle-input-count {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
-    background-color: var(--clr-buttons-background-blue);
-    padding: 5px 5px;
-    border-radius: 50px;
+    display: inline-grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.toggle-input input {
+header .toggle-input-count p {
     margin: 0;
     padding: 0;
+
+    font-size: 12px;
+}
+
+header .toggle-input {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: var(--clr-buttons-background-blue);
+    border-radius: 50px;
+
+    padding: 4px 0;
+}
+
+header .toggle-input input {
+    margin: 0;
+    padding: 0;
+
+    display: inline-grid;
+    justify-self: center;
 
     width: 14px;
     height: 14px;
@@ -74,131 +107,84 @@ header p {
 
     background-color: var(--clr-button-background-red);
     border-radius: 50%;
-}
 
-.toggle-input input:hover {
-    background-color: var(--clr-button-background-active-red);
     cursor: pointer;
-}
-
-#one {
-    opacity: 1;
 }
 
 main {
-    width: 540px;
-    height: 632px;
+    width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 24px;
 }
 
-.result-background {
-    width: 100%;
-    height: 20%;
-
-    background-color: var(--clr-result-background-blue);
-    border-radius: 12px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+main .result-background {
     box-sizing: border-box;
     padding: 32px 40px;
+
+    border-radius: 12px;
 }
 
-#display {
+main .result-background #display {
     width: 100%;
     height: 100%;
 
-    background-color: var(--clr-result-background-blue);
-    border: none;
-
-    font-family: "League Spartan", sans-serif;
     font-size: 45px;
     font-weight: bold;
-    color: var(--clr-text-white);
 
     text-align: right;
     text-overflow: ellipsis;
+
+    border: none;
 }
 
-.buttons-background {
-    background-color: var(--clr-buttons-background-blue);
-    border-radius: 12px;
-
+main .buttons-background {
     box-sizing: border-box;
     padding: 30px;
-}
-
-.buttons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 26px;
-}
-
-.buttons-container button {
-    width: 100px;
-    height: 60px;
-
-    font-family: "League Spartan", sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--clr-text-gray-blue);
 
     border-radius: 12px;
-    cursor: pointer;
+}
 
-    background-color: var(--clr-button-background-gray-orange);
-    box-shadow: 0 4px 0 var(--clr-button-background-shadow-gray-orange);
-    border: none;
+main .buttons-background .buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 23px;
 
-    display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    box-sizing: border-box;
-    padding-top: 10px;
 }
 
-.buttons-container button:hover {
-    background-color: var(--clr-text-white);
+main .buttons-background .buttons-container button {
+    width: 100%;
+    height: 60px;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 12px;
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
 
-.buttons-container button:nth-child(4) {
+main .buttons-background .buttons-container button:nth-child(4) {
+    color: var(--clr-text-white);
     font-size: 28px;
+}
+
+main .buttons-background .buttons-container button:nth-child(17) {
+    width: 100%;
+    grid-column: 1 / 3;
+
     color: var(--clr-text-white);
-    background-color: var(--clr-button-background-blue);
-    box-shadow: 0 4px 0 var(--clr-button-background-shadow-blue);
-}
-
-.buttons-container button:nth-child(4):hover {
-    background-color: var(--clr-button-background-active-blue);
-}
-
-.buttons-container button:nth-child(17) {
     font-size: 28px;
-    flex-grow: 1;
-    color: var(--clr-text-white);
-    background-color: var(--clr-button-background-blue);
-    box-shadow: 0 4px 0 var(--clr-button-background-shadow-blue);
 }
 
-.buttons-container button:nth-child(17):hover {
-    background-color: var(--clr-button-background-active-blue);
-}
+main .buttons-background .buttons-container button:nth-child(18) {
+    width: 100%;
+    grid-column: 3 / 5;
 
-.buttons-container button:nth-child(18) {
-    flex-grow: 1;
-    color: var(--clr-text-white);
-    background-color: var(--clr-button-background-red);
-    box-shadow: 0 4px 0 var(--clr-button-background-shadow-red);
-}
-
-.buttons-container button:nth-child(18):hover {
-    background-color: var(--clr-button-background-active-red);
+    font-size: 28px;
 }

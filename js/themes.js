@@ -1,13 +1,15 @@
 function switchTheme() {
     const bodyColor = document.getElementsByTagName('body')[0];
+    const p1 = document.getElementsByClassName('p1');
+
     const resultBackground = document.getElementById('res-bg');
     const displayBackground = document.getElementById('display');
-    const buttonsBackground = document.getElementById('buttons-bg');
 
+    const buttonsBackground = document.getElementById('buttons-bg');
     const switchBtn = document.getElementsByClassName('switchBtn');
+
     const buttonSymbols = document.getElementsByClassName('button-symbol');
     const buttonRemove = document.getElementsByClassName('button-remove');
-    const p1 = document.getElementsByClassName('p1');
     const resultButton = document.getElementById('button-calculate');
 
     const themes = [
