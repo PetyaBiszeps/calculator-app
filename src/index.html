@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>calculator</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+    <header>
+        <h1 class="p1" id="h1-logo">calc</h1>
+        <div class="theme-toggle-name">
+            <p class="p1">THEME</p>
+        </div>
+        <div class="toggle-input-count">
+            <p class="p1">1</p>
+            <p class="p1">2</p>
+            <p class="p1">3</p>
+        </div>
+        <div class="toggle-input" id="input-background">
+            <input class="switchBtn" id="one" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="0"/>
+            <input class="switchBtn" id="two" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="1"/>
+            <input class="switchBtn" id="three" name="toggle" onclick="switchTheme()" tabindex="0" type="radio" value="2"/>
+        </div>
+    </header>
+    <main>
+        <div class="result-background" id="res-bg">
+            <input class="p1" id="display" readonly value="0">
+        </div>
+        <div class="buttons-background" id="buttons-bg">
+            <div class="buttons-container">
+                <button class="button button-symbol" data-value="7">7</button>
+                <button class="button button-symbol" data-value="8">8</button>
+                <button class="button button-symbol" data-value="9">9</button>
+                <button class="button button-remove" data-value="DEL">DEL</button>
+                <button class="button button-symbol" data-value="4">4</button>
+                <button class="button button-symbol" data-value="5">5</button>
+                <button class="button button-symbol" data-value="6">6</button>
+                <button class="button button-symbol" data-value="+">+</button>
+                <button class="button button-symbol" data-value="1">1</button>
+                <button class="button button-symbol" data-value="2">2</button>
+                <button class="button button-symbol" data-value="3">3</button>
+                <button class="button button-symbol" data-value="-">-</button>
+                <button class="button button-symbol" data-value=".">.</button>
+                <button class="button button-symbol" data-value="0">0</button>
+                <button class="button button-symbol" data-value="/">/</button>
+                <button class="button button-symbol" data-value="*">x</button>
+                <button class="button button-remove" data-value="AC">RESET</button>
+                <button class="button" data-value="=" id="button-calculate">=</button>
+
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<script src="../app.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/themes.js"></script>
+
+
+</body>
+</html>

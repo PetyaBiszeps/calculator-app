@@ -1,6 +1,7 @@
 # Frontend Mentor - Calculator app solution
 
-This is my solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
+This is a simple calculator app based on my solution to
+the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -29,19 +30,19 @@ as an actual app with nodeJS ;)
 
 ### Screenshot #1
 
-![](/assets/screenshots/screenshot-1.png)
+![](/src/assets/screenshots/screenshot-1.png)
 
 ### Screenshot #2
 
-![](/assets/screenshots/screenshot-2.png)
+![](/src/assets/screenshots/screenshot-2.png)
 
 ### Screenshot #3
 
-![](/assets/screenshots/screenshot-3.png)
+![](/src/assets/screenshots/screenshot-3.png)
 
 ### Screenshot #4
 
-![](assets/screenshots/screenshot-4.png)
+![](/src/assets/screenshots/screenshot-4.png)
 
 ### Links
 
