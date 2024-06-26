@@ -45,7 +45,7 @@ as an actual app with nodeJS ;)
 
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/calculator-app-using-css-grid-js-qcQAyGUdRZ)
 - [Live Site URL](https://petyabiszeps.github.io/calculator-app/)
 
 ## My process
